@@ -1,103 +1,105 @@
-import Image from "next/image";
-
-export default function Home() {
+// src/app/page.tsx
+export default function HomePage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div>
+      {/* Hero Section */}
+      <section className="bg-green-600 text-white text-center py-20">
+        <h1 className="text-5xl font-bold">
+          {/* YOUR TASK 1: Add your chosen Slogan/Tagline here */}
+          
+        </h1>
+        <p className="mt-4 text-xl">
+          {/* YOUR TASK 2: Add a brief, welcoming sentence. */}
+           Welcome to OLARAHMA Integrated Farm, where we are committed to providing premium poultry products to the Nigerian market. 
+          We specialize in the breeding, raising, and distribution of healthy and high-quality eggs and poultry meat, produced with the highest standards of care and sustainable farming practices. 
+          Our mission is simple: to deliver fresh, nutritious, and locally sourced poultry products while maintaining ethical and environmentally friendly farming practices.
+        
+          Your trusted source for high-quality poultry in Nigeria.
+        </p>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Introduction Section */}
+      <section className="container mx-auto px-6 py-12">
+        <h2 className="text-3xl font-bold text-center text-gray-800">
+          Welcome to Olarahmah's Integrated Farm
+        </h2>
+        <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">
+          {/* YOUR TASK 3: Write 2-3 sentences about the farm. This is a snippet of your mission. */}
+Mission
+" To revolutionize the poultry industry in Nigeria by offering fresh, safe, and nutritious poultry products that enrich the lives of our customers and support the local economy."
+
+Vision
+Our vision is to become Nigeria’s leading provider of healthy, high-quality poultry products while ensuring sustainability, animal welfare, and community development.
+We aim to set a benchmark for the industry by focusing on ethical farming and offering the best poultry products to Nigerian households, restaurants, and businesses.
+
+
+         </p>
+      </section>
+
+      {/* Core Offerings Section */}
+      <section className="bg-gray-50 py-12">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Products Column */}
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-gray-800">Our Products</h3>
+              <p className="mt-2 text-gray-600">
+                {/* YOUR TASK 4: Briefly describe the products you offer. */}
+                At OLARAHMA Integrated Farm, we stand out from the competition by offering a range of high quality, locally produced products with a focus on freshness, taste, and nutritional value.
+	Fresh, Farm-to-Table Eggs
+	We produce farm-fresh eggs that are free from hormones and artificial additives, ensuring the highest quality for our customers. Our eggs are rich in nutrients, providing a healthy option for Nigerian families. 
+
+-	Freshness Guaranteed: Our eggs are collected daily and delivered fresh to customers.
+-	Nutrient-Rich: Our hens are fed a balanced diet, ensuring that our eggs are rich in essential vitamins and minerals.
+
+	Free-Range Poultry Meat  
+	We specialize in raising free-range chickens that are allowed to roam freely, providing them with a natural and healthy environment to thrive. This method results in poultry meat that is more tender, flavorful, and nutritious. Our chickens are carefully raised without the use of hormones or antibiotics.
+
+-	Healthy and Tender Meat: Our free-range chickens are known for their rich flavor and superior quality.
+-	Antibiotic-Free: We ensure our poultry are raised without harmful chemicals or antibiotics, giving you peace of mind.
+
+	Value-Added Poultry Products
+	We offer a variety of value-added poultry products, including slaughtering, chicken packaging, chicken wings, and chicken fillets. These products are ideal for families, restaurants, and hotels looking for convenient, high-quality meals.
+
+-	Ready-to-Eat Options: Our slaughter chicken and other ready-to-eat products are perfect for busy individuals and food lovers who want delicious, healthy meals in no time.
+-	Custom Cuts and Processing: We provide custom cuts and specialized poultry processing services, including packaging for commercial customers.
+
+	Organic Poultry Feed  
+	At OLARAHMA Integrated Farm, we use our own organic feed made from natural grains and vegetables to nourish our birds. This contributes to the overall health of the poultry and enhances the quality of our products.
+
+
+              </p>
+              {/* We'll make this a real button/link later */}
+              <a href="/products" className="mt-4 inline-block bg-green-700 text-white font-bold py-2 px-4 rounded hover:bg-green-800">
+                See Our Products
+              </a>
+            </div>
+            
+            {/* Services Column */}
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-gray-800">Farmer Services</h3>
+              <p className="mt-2 text-gray-600">
+                {/* YOUR TASK 5: Briefly describe the services you offer to other farmers. */}
+-	Healthy Feed for Healthy Birds: We ensure that our poultry are raised on the best nutrition available, contributing to better health and higher-quality products.
+
+	Educational Support for Poultry Farmers
+	We offer consultancy services and training for aspiring and established poultry farmers, providing expert guidance on poultry farming best practices, feed management, and health protocols. Our goal is to help local farmers improve their productivity and sustainability in the poultry sector.
+
+-	Training Programs: Comprehensive workshops on poultry care, biosecurity, and farm management.
+-	Consultancy Services: Expert advice on improving farm operations and maximizing profits.
+
+
+              </p>
+              {/* We'll make this a real button/link later */}
+              <a href="/services" className="mt-4 inline-block bg-blue-700 text-white font-bold py-2 px-4 rounded hover:bg-blue-800">
+                Learn About Our Services
+              </a>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* We will add more sections like Testimonials, Blog posts, etc. later */}
     </div>
   );
 }
